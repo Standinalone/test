@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+  </head>
+  <body>
+    <% include templates/header.ejs %>
+   <div id="game">
+
+
+   <div class="container">
+       			<div class="menu" >
+       				<h1>Tic - Tac - Toe</h1>
+
+       				<h4>Create a new Game</h4>
+       				<input type="text" name="name" id="nameNew" placeholder="Room name" required>
+                    <input type="text" id="size" placeholder="Size (10 by default)" required>
+                    <input type="text" id="win" placeholder="max in a row (5 by default)" required>
+                    <!-- Rounded switch -->
+
+                    Borders<input type="checkbox" id="borders" >
+
+
+       				<button id="new">New Game</button>
+       				<br><br>
+       				<h4>Join an existing game</h4>
+
+					<table class="btn_group"></table>
+       			</div>
+       			<div class="gameBoard">
+       				<h2 id="userHello"></h2>
+       				<h3 id="turn"></h3>
+       				<table class="center"></table>
+       				<button id="leave">Leave Game</button>
+       			</div>
+       		</div>
+
+
+
+
+
+
+
+  <div id="chat">
+      <section>
+        <div id="change_username">
+            <input id="username" type="text" />
+            <button id="send_username" type="button">Change username</button>
+        </div>
+      </section>
+
+      <section id="chatroom"></section>
+
+
+        <section id="feedback"></section>
+      <section id="input_zone">
+        <input id="message" class="vertical-align" type="text" />
+        <button id="send_message" class="vertical-align" type="button">Send</button>
+      </section>
+
+      <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="game.js"></script>
+      <script src="chat.js"></script>
+      </div>
+      </div>
+    </body>
+</html>

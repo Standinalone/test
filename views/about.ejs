@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+  </head>
+  <body>
+    <% include templates/header.ejs %>
+    <p>There's nothing in here. So damn sad :(</p>
+    <canvas id="drawing"></canvas>
+    <script src="draw.js"></script>
+  </body>
+</html>
